@@ -8,27 +8,21 @@ namespace ComplexNumbers
 {
     static class Calculator
     {
-        static private double re1 = Convert.ToDouble(Console.ReadLine());
-        static private double re2 = Convert.ToDouble(Console.ReadLine());
-        static private double im1 = Convert.ToDouble(Console.ReadLine());
-        static private double im2 = Convert.ToDouble(Console.ReadLine());
-        static ComplexNumbers a = new ComplexNumbers(re1, im1);
-        static ComplexNumbers b = new ComplexNumbers(re2, im2);
-        public static void Addition()
+        public static ComplexNumbers Addition(ComplexNumbers a, ComplexNumbers b)
         {
-            Console.WriteLine(a + b);
+            return a + b;
         }
-        public static void Subtraction()
+        public static ComplexNumbers Subtraction(ComplexNumbers a, ComplexNumbers b)
         {
-            Console.WriteLine(a - b);
+            return a - b;
         }
-        public static void Division()
+        public static ComplexNumbers Division(ComplexNumbers a, ComplexNumbers b)
         {
-            Console.WriteLine(a / b);
+            return a / b;
         }
-        public static void Multiplication()
+        public static ComplexNumbers Multiplication(ComplexNumbers a, ComplexNumbers b)
         {
-            Console.WriteLine(a * b);
+            return a * b;
         }
     }
 }
